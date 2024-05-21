@@ -18,8 +18,13 @@ public class JsonToObject {
     }
 
     public static Transaction deserialize(String json) throws JsonProcessingException {
-        ObjectMapper mapper = new ObjectMapper();
-        return mapper.readValue(json, Transaction.class);
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            return mapper.readValue(json, Transaction.class);
+        } catch (JsonProcessingException e) {
+            System.err.println(e.getMessage());
+        }
+        throw new RuntimeException();
     }
 
 }
