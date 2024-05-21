@@ -1,0 +1,3 @@
+{"id":"34","name":"alex","amount":2500,"date":[2024,6,15],"typeOfTransaction":"CREDIT"}
+{"id":"12","name":"dee","amount":1000,"date":[2024,5,22],"typeOfTransaction":"DEBIT"}
+{"id":"35","name":"bob","amount":1500,"date":[2024,6,16],"typeOfTransaction":"DEBIT"}
